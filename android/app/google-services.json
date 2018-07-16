@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "399897427549",
+    "firebase_url": "https://imagery-cards.firebaseio.com",
+    "project_id": "imagery-cards",
+    "storage_bucket": "imagery-cards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399897427549:android:3eee7c2241747aa6",
+        "android_client_info": {
+          "package_name": "com.saturdaydesign.imagerycards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399897427549-a44777crqif9b4o0039j1tlv3uu2rtl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDku3hioFh9FqcXgn_gPZ8poOoFDjtMCpA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

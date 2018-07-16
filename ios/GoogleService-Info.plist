@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>399897427549-8s61lbbjl6rpuio197sjfu3stmgtmm3v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.399897427549-8s61lbbjl6rpuio197sjfu3stmgtmm3v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDrgScQK5OtfZEI5bCdcF9O4MeJxN98w00</string>
+	<key>GCM_SENDER_ID</key>
+	<string>399897427549</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.saturdaydesign.imagerycards</string>
+	<key>PROJECT_ID</key>
+	<string>imagery-cards</string>
+	<key>STORAGE_BUCKET</key>
+	<string>imagery-cards.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:399897427549:ios:3eee7c2241747aa6</string>
+	<key>DATABASE_URL</key>
+	<string>https://imagery-cards.firebaseio.com</string>
+</dict>
+</plist>

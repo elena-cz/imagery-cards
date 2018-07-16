@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.saturdaydesign.imagerycards;
 
 import android.annotation.SuppressLint;
 import android.app.Application;

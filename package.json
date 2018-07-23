@@ -7,7 +7,7 @@
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.4.0",
     "babel-preset-airbnb": "^2.5.2",
-    "babel-preset-react-native": "^4.0.0",
+    "babel-preset-react-native": "^5.0.0",
     "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
@@ -25,7 +25,8 @@
     "ios": "react-native run-ios",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "link": "react-native link"
   },
   "jest": {
     "preset": "react-native"
@@ -38,5 +39,10 @@
     "react-native-firebase": "^4.3.6",
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.7.0"
+  },
+  "rnpm": {
+    "assets": [
+      "./app/assets/fonts/"
+    ]
   }
 }

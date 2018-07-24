@@ -3,7 +3,7 @@ import { Text, StyleSheet } from 'react-native';
 import { FONTS, COLORS } from 'app/styles';
 
 
-export default function BodyText(props) {
+export default function H2Text(props) {
   const { style, children } = props;
 
   return (
@@ -16,7 +16,8 @@ export default function BodyText(props) {
 const styles = StyleSheet.create({
   text: {
     fontFamily: FONTS.PRIMARY,
-    fontSize: 18,
+    fontSize: 24,
     color: COLORS.GRAY.DARK,
+    marginBottom: 8,
   },
 });

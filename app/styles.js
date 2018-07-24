@@ -3,7 +3,7 @@ export const FONTS = {
 
   PRIMARY: 'WoodfordBourne-Regular',
 
-  ITALIC: 'WoodfordBourne-ThinItalic',
+  ITALIC: 'WoodfordBourne-Thinitalic',
 
   HEADLINE: 'BakerieSmoothWide-Medium',
 
@@ -42,10 +42,12 @@ export const COLORS = {
 
 export const BACKGROUNDS = {
 
-  JOURNEY: 'require("./assets/images/BlueBkg.png")',
+  JOURNEY: require('./assets/images/BlueBkg.png'),
 
-  LIGHTENING: 'require("./assets/images/YellowBkg.png")',
+  LIGHTENING: require('./assets/images/YellowBkg.png'),
 
-  DEEPENING: 'require("./assets/images/PurpleBkg.png")',
+  DEEPENING: require('./assets/images/PurpleBkg.png'),
 
 };
+
+export const BORDERRADIUS = 6;

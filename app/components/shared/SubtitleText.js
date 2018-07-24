@@ -3,7 +3,7 @@ import { Text, StyleSheet } from 'react-native';
 import { FONTS, COLORS } from 'app/styles';
 
 
-export default function BodyText(props) {
+export default function SubtitleText(props) {
   const { style, children } = props;
 
   return (
@@ -15,8 +15,9 @@ export default function BodyText(props) {
 
 const styles = StyleSheet.create({
   text: {
-    fontFamily: FONTS.PRIMARY,
-    fontSize: 18,
-    color: COLORS.GRAY.DARK,
+    fontFamily: FONTS.ITALIC,
+    fontSize: 16,
+    color: COLORS.GRAY.MEDIUM,
+    textAlign: 'center',
   },
 });

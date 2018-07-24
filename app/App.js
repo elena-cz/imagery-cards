@@ -3,6 +3,13 @@ import firebase from 'react-native-firebase';
 import { StyleSheet, Platform, Image, Text, View, ScrollView, ImageBackground } from 'react-native';
 
 import BodyText from 'app/components/shared/BodyText';
+import H1Text from 'app/components/shared/H1Text';
+import H2Text from 'app/components/shared/H2Text';
+import SubtitleText from 'app/components/shared/SubtitleText';
+
+import Background from 'app/components/shared/Background';
+import RoundedBox from 'app/components/shared/RoundedBox';
+import DividingLine from 'app/components/shared/DividingLine';
 
 
 export default class App extends React.Component {
@@ -20,51 +27,29 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.parentContainer}>
-        <ImageBackground
-          source={require('./assets/images/BlueBkg.png')}
-          style={styles.imageContainer}
-          imageStyle={styles.image}
-        >
+        <Background category="DEEPENING">
           <View style={styles.container}>
             <ScrollView>
-              <View style={styles.roundedBox}>
-                <Text style={styles.title}>
-                  Title
-                </Text>
-              </View>
-              <View style={styles.roundedBox}>
-                <Text style={styles.body}>
-                  You are on vacation in the mountains and are waiting in line, ready to go as a passenger on a river rafting trip. Suddenly someone is yelling at you, “We are missing one guide today. We need you to step up and guide one of the boats!”
-                </Text>
-              </View>
-              <View style={styles.roundedBox}>
+              <RoundedBox>
+                <H1Text>
+                  Deepening
+                </H1Text>
+                <SubtitleText>
+                  Tagline about how Deepening cards bring you into a relaxed state
+                </SubtitleText>
+              </RoundedBox>
+              <RoundedBox>
+                <H2Text>
+                  Favorites
+                </H2Text>
+                <DividingLine category="DEEPENING" />
                 <BodyText>
                   You are on vacation in the mountains and are waiting in line, ready to go as a passenger on a river rafting trip. Suddenly someone is yelling at you, “We are missing one guide today. We need you to step up and guide one of the boats!”
                 </BodyText>
-              </View>
-              <View style={styles.roundedBox}>
-                <Text>
-                  You are on vacation in the mountains and are waiting in line, ready to go as a passenger on a river rafting trip. Suddenly someone is yelling at you, “We are missing one guide today. We need you to step up and guide one of the boats!”
-                </Text>
-              </View>
-              <View style={styles.roundedBox}>
-                <Text>
-                  You are on vacation in the mountains and are waiting in line, ready to go as a passenger on a river rafting trip. Suddenly someone is yelling at you, “We are missing one guide today. We need you to step up and guide one of the boats!”
-                </Text>
-              </View>
-              <View style={styles.roundedBox}>
-                <Text>
-                  You are on vacation in the mountains and are waiting in line, ready to go as a passenger on a river rafting trip. Suddenly someone is yelling at you, “We are missing one guide today. We need you to step up and guide one of the boats!”
-                </Text>
-              </View>
-              <View style={styles.roundedBox}>
-                <Text>
-                  You are on vacation in the mountains and are waiting in line, ready to go as a passenger on a river rafting trip. Suddenly someone is yelling at you, “We are missing one guide today. We need you to step up and guide one of the boats!”
-                </Text>
-              </View>
+              </RoundedBox>
             </ScrollView>
           </View>
-        </ImageBackground>
+        </Background>
       </View>
     );
   }
@@ -82,14 +67,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  roundedBox: {
-    flex: 1,
-    borderRadius: 6,
-    backgroundColor: 'white',
-    marginBottom: 18,
-    padding: 16,
-    alignItems: 'center',
-  },
   imageContainer: {
     flex: 1,
   },
@@ -98,15 +75,5 @@ const styles = StyleSheet.create({
     width: null,
     height: null,
     resizeMode: 'cover',
-  },
-  title: {
-    fontFamily: 'BakerieSmoothWide-Medium',
-    color: 'black',
-    fontSize: 30,
-  },
-  body: {
-    fontFamily: 'WoodfordBourne-Regular',
-    color: 'black',
-    fontSize: 18,
   },
 });

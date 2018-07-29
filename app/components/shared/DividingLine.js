@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { View, StyleSheet } from 'react-native';
-import { FONTS, COLORS } from 'app/styles';
+import { COLORS } from 'app/styles';
 
-export default function DividingLine(props) {
-  const { category, style } = props;
-
-  return ( 
+export default function DividingLine({ category, style }) {
+  return (
     <View style={[styles.line, style, { borderBottomColor: COLORS[category].LIGHT }]} />
   );
 }

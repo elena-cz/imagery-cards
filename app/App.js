@@ -10,6 +10,7 @@ import SubtitleText from 'app/components/shared/SubtitleText';
 import Background from 'app/components/shared/Background';
 import RoundedBox from 'app/components/shared/RoundedBox';
 import DividingLine from 'app/components/shared/DividingLine';
+import ButtonPrimary from 'app/components/shared/ButtonPrimary';
 
 
 export default class App extends React.Component {
@@ -37,6 +38,10 @@ export default class App extends React.Component {
                 <SubtitleText>
                   Tagline about how Deepening cards bring you into a relaxed state
                 </SubtitleText>
+                <ButtonPrimary 
+                  on-press="console.log('Pressed Primary Button)"
+                  title="Random Card"
+                />
               </RoundedBox>
               <RoundedBox>
                 <H2Text>

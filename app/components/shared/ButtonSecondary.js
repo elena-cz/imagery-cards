@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { View, Text, StyleSheet, TouchableOpacity, TouchableNativeFeedback, Platform } from 'react-native';
 import { FONTS, COLORS, BORDERRADIUS } from 'app/styles';
 
-export default function ButtonPrimary({ category, title, onPress, disabled }) {
+export default function ButtonSecondary({ category, title, onPress, disabled }) {
   const buttonStyles = [styles.button];
   const textStyles = [styles.text];
 
   if (category) {
-    buttonStyles.push({ backgroundColor: COLORS[category].LIGHT });
+    buttonStyles.push({ borderColor: COLORS[category].LIGHT });
   }
 
   const accessibilityStates = [];
@@ -37,14 +37,14 @@ export default function ButtonPrimary({ category, title, onPress, disabled }) {
   );
 }
 
-ButtonPrimary.propTypes = {
+ButtonSecondary.propTypes = {
   category: PropTypes.string,
   title: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 };
 
-ButtonPrimary.defaultProps = {
+ButtonSecondary.defaultProps = {
   category: 'JOURNEY',
   disabled: false,
 };
@@ -52,7 +52,8 @@ ButtonPrimary.defaultProps = {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: COLORS.JOURNEY.LIGHT,
+    borderColor: COLORS.JOURNEY.LIGHT,
+    borderWidth: 2,
     borderRadius: BORDERRADIUS,
     marginBottom: 8,
   },
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buttonDisabled: {
-    backgroundColor: COLORS.GRAY.LIGHT,
+    borderColor: COLORS.GRAY.LIGHT,
   },
   textDisabled: {
     color: COLORS.GRAY.MEDIUM,

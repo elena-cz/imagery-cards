@@ -11,6 +11,7 @@ import Background from 'app/components/shared/Background';
 import RoundedBox from 'app/components/shared/RoundedBox';
 import DividingLine from 'app/components/shared/DividingLine';
 import ButtonPrimary from 'app/components/shared/ButtonPrimary';
+import ButtonSecondary from 'app/components/shared/ButtonSecondary';
 
 
 export default class App extends React.Component {
@@ -38,9 +39,14 @@ export default class App extends React.Component {
                 <SubtitleText>
                   Tagline about how Deepening cards bring you into a relaxed state
                 </SubtitleText>
+                <ButtonSecondary
+                  onPress={function () { console.log('Pressed Secondary Button'); }}
+                  title="Cancel"
+                  category="DEEPENING"
+                />
                 <ButtonPrimary
                   onPress={function () { console.log('Pressed Primary Button'); }}
-                  title="Random Card"
+                  title="Save"
                   category="DEEPENING"
                 />
               </RoundedBox>

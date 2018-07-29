@@ -26,7 +26,9 @@
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
     "test": "jest",
-    "link": "react-native link"
+    "link": "react-native link",
+    "log-android": "react-native log-android",
+    "log-ios": "react-native log-ios"
   },
   "jest": {
     "preset": "react-native"

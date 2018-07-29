@@ -38,9 +38,10 @@ export default class App extends React.Component {
                 <SubtitleText>
                   Tagline about how Deepening cards bring you into a relaxed state
                 </SubtitleText>
-                <ButtonPrimary 
-                  on-press="console.log('Pressed Primary Button)"
+                <ButtonPrimary
+                  onPress={function () { console.log('Pressed Primary Button'); }}
                   title="Random Card"
+                  category="DEEPENING"
                 />
               </RoundedBox>
               <RoundedBox>

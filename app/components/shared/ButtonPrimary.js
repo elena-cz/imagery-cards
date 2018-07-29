@@ -23,6 +23,7 @@ export default function ButtonPrimary({ category, title, onPress, disabled }) {
   return (
     <Touchable
       accessibilityRole="button"
+      background={TouchableNativeFeedback.Ripple('#ffffff')}
       accessibilityStates={accessibilityStates}
       disabled={disabled}
       onPress={onPress}
@@ -53,12 +54,14 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: COLORS.JOURNEY.LIGHT,
     borderRadius: BORDERRADIUS,
+    marginBottom: 8,
   },
   text: {
     fontFamily: FONTS.PRIMARY,
     fontSize: 18,
     color: COLORS.GRAY.DARK,
-    padding: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     textAlign: 'center',
   },
   buttonDisabled: {

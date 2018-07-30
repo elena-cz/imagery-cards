@@ -24,18 +24,18 @@ export const COLORS = {
     ICON: '#1592E6',
   },
 
-  LIGHTENING: {
-    DARK: '#FFEF50',
-    MEDIUM: '#FFEF50',
-    LIGHT: '#FFF9BF',
-    ICON: '#616161',
-  },
-
   DEEPENING: {
     DARK: '#6032E2',
     MEDIUM: '#9068DE',
     LIGHT: '#E9E0FE',
     ICON: '#9068DE',
+  },
+
+  LIGHTENING: {
+    DARK: '#FFEF50',
+    MEDIUM: '#FFEF50',
+    LIGHT: '#FFF9BF',
+    ICON: '#616161',
   },
 
 };
@@ -44,9 +44,9 @@ export const BACKGROUNDS = {
 
   JOURNEY: require('./assets/images/BlueBkg.png'),
 
-  LIGHTENING: require('./assets/images/YellowBkg.png'),
-
   DEEPENING: require('./assets/images/PurpleBkg.png'),
+
+  LIGHTENING: require('./assets/images/YellowBkg.png'),
 
 };
 

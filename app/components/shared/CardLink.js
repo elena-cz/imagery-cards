@@ -69,8 +69,7 @@ const styles = StyleSheet.create({
   bullet: {
     display: 'none',
     paddingRight: 8,
-    // fontSize: 18,
-    // width: 18,
+    paddingTop: 2,
   },
   text: {
     textAlign: 'center',

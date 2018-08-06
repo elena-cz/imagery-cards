@@ -14,6 +14,11 @@ import ButtonPrimary from 'app/components/shared/ButtonPrimary';
 import ButtonSecondary from 'app/components/shared/ButtonSecondary';
 import CardLinkList from 'app/components/shared/CardLinkList';
 
+import Navigation from 'app/components/shared/Navigation';
+import FavoriteIconButton from 'app/components/shared/IconButtons/FavoriteIconButton';
+import HelpIconButton from 'app/components/shared/IconButtons/HelpIconButton';
+import BackIconButton from 'app/components/shared/IconButtons/BackIconButton';
+
 import CARDS from 'app/exampleCards';
 
 export default class App extends React.Component {
@@ -38,7 +43,12 @@ export default class App extends React.Component {
             barStyle="dark-content"
           />
           <View style={styles.container}>
-            
+            <Navigation>
+              <BackIconButton />
+              <FavoriteIconButton />
+              <FavoriteIconButton />
+              <HelpIconButton />
+            </Navigation>
             <ScrollView>
               <RoundedBox>
                 <H1Text>
@@ -75,7 +85,7 @@ export default class App extends React.Component {
                 <CardLinkList
                   cards={CARDS.JOURNEY}
                   onPress={(id) => console.log('Clicked card', id)}
-                  withCategoryDot
+                  // withCategoryDot
                 />
               </RoundedBox>
             </ScrollView>
@@ -93,10 +103,11 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingTop: 18,
+    // paddingTop: 18,
+    flexDirection: 'column',
     paddingHorizontal: 18,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: 'stretch',
     marginTop: StatusBar.currentHeight || 20,
   },
   imageContainer: {

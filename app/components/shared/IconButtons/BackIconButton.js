@@ -1,11 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import IconButton from 'app/components/shared/IconButtons/IconButton';
 
-export default function BackIconButton(props) {
+export default function BackIconButton({ category }) {
 
   return (
     <IconButton
-      category="DEEPENING"
+      category={category}
       iconName="arrow-left"
       labelText="Back"
       onPress={() => console.log('Help pressed')}
@@ -17,3 +19,11 @@ export default function BackIconButton(props) {
     />
   );
 }
+
+BackIconButton.propTypes = {
+  category: PropTypes.string,
+};
+
+BackIconButton.defaultProps = {
+  category: 'JOURNEY',
+};

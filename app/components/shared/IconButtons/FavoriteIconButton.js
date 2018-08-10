@@ -1,11 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import IconButton from 'app/components/shared/IconButtons/IconButton';
 
-export default function FavoriteIconButton(props) {
+export default function FavoriteIconButton({ category }) {
 
   return (
     <IconButton
-      category="DEEPENING"
+      category={category}
       iconName="heart"
       labelText="Favorite"
       onPress={() => console.log('Favorite pressed')}
@@ -18,3 +20,11 @@ export default function FavoriteIconButton(props) {
     />
   );
 }
+
+FavoriteIconButton.propTypes = {
+  category: PropTypes.string,
+};
+
+FavoriteIconButton.defaultProps = {
+  category: 'JOURNEY',
+};

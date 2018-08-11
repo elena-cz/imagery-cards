@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, View, StyleSheet, TouchableOpacity, TouchableNativeFeedback, Animated } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, Animated } from 'react-native';
 import { COLORS, FONTS } from 'app/styles';
 import Icon from 'react-native-vector-icons/Feather';
 
@@ -60,7 +60,6 @@ export default class IconButton extends React.Component {
         <TouchableOpacity
           accessibilityRole="button"
           accessibilityLabel={labelText}
-          background={TouchableNativeFeedback.Ripple('#ffffff')}
           onPress={onPress}
           onLongPress={fadeInAndOut}
         >

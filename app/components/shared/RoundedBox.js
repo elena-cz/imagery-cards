@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     marginBottom: 18,
     padding: 16,
-    alignItems: 'center',
+    alignItems: 'stretch',
   },
 });

@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, View, ScrollView, StyleSheet } from 'react-native';
+import { Text, View, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 
 import ScreenContainer from 'app/components/shared/ScreenContainer';
 import Navigation from 'app/components/shared/Navigation';
 import HelpIconButton from 'app/components/shared/IconButtons/HelpIconButton';
-import RoundedBox from 'app/components/shared/RoundedBox';
-import H1Text from 'app/components/shared/H1Text';
+import CategoryChooser from 'app/components/home/CategoryChooser';
+
+
 
 
 export default class HomeScreen extends React.Component {
   static propTypes = {
- 
   };
 
   static defaultProps = {
@@ -37,11 +37,7 @@ export default class HomeScreen extends React.Component {
           />
         </Navigation>
         <ScrollView>
-          <RoundedBox>
-            <H1Text>
-              Pick a Card
-            </H1Text>
-          </RoundedBox>
+          <CategoryChooser navigation={navigation} />
         </ScrollView>
       </ScreenContainer>
     );
@@ -50,5 +46,5 @@ export default class HomeScreen extends React.Component {
 
 
 const styles = StyleSheet.create({
-  
+
 });

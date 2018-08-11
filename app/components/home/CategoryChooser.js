@@ -19,7 +19,7 @@ export default function CategoryChooser({ navigation }) {
           style={styles.button}
           accessibilityRole="button"
           accessibilityLabel="Deepening Cards"
-          onPress={() => navigation.push('Help')}
+          onPress={() => navigation.push('CategoryBrowse', { category: 'DEEPENING' })}
         >
           <Image
             style={styles.icon}
@@ -34,7 +34,7 @@ export default function CategoryChooser({ navigation }) {
           style={styles.button}
           accessibilityRole="button"
           accessibilityLabel="Journey Cards"
-          onPress={() => navigation.push('Help')}
+          onPress={() => navigation.push('CategoryBrowse', { category: 'JOURNEY' })}
         >
           <Image
             style={styles.icon}
@@ -49,7 +49,7 @@ export default function CategoryChooser({ navigation }) {
           style={styles.button}
           accessibilityRole="button"
           accessibilityLabel="Lightening Cards"
-          onPress={() => navigation.push('Help')}
+          onPress={() => navigation.push('CategoryBrowse', { category: 'LIGHTENING' })}
         >
           <Image
             style={styles.icon}

@@ -92,7 +92,7 @@ const CARDS = {
       title: '',
       subtitle: '',
       text: ``,
-      category: '',
+      category: 'LIGHTENING',
       border: '',
     },
   ],

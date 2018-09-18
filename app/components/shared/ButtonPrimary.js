@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.JOURNEY.LIGHT,
     borderRadius: BORDERRADIUS,
     marginBottom: 8,
+    alignSelf: 'center',
   },
   text: {
     fontFamily: FONTS.PRIMARY,

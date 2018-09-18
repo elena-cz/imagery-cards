@@ -52,7 +52,7 @@ CardLink.propTypes = {
 
 CardLink.defaultProps = {
   subtitle: '',
-  category: '',
+  category: 'JOURNEY',
   withCategoryDot: false,
 };
 

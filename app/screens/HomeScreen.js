@@ -8,8 +8,6 @@ import HelpIconButton from 'app/components/shared/IconButtons/HelpIconButton';
 import CategoryChooser from 'app/components/home/CategoryChooser';
 
 
-
-
 export default class HomeScreen extends React.Component {
   static propTypes = {
   };

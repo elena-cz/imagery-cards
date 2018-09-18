@@ -23,5 +23,6 @@ const styles = StyleSheet.create({
     borderBottomColor: COLORS.JOURNEY.LIGHT,
     width: '60%',
     marginBottom: 8,
+    alignSelf: 'center',
   },
 });

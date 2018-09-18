@@ -11,6 +11,9 @@ import H1Text from 'app/components/shared/H1Text';
 import SubtitleText from 'app/components/shared/SubtitleText';
 import ButtonPrimary from 'app/components/shared/ButtonPrimary';
 
+import AllCardsList from 'app/components/categoryBrowse/AllCardsList';
+
+import CATEGORY_INFO from 'app/categoryInfo';
 
 export default class CategoryBrowseScreen extends React.Component {
   static propTypes = {
@@ -44,10 +47,10 @@ export default class CategoryBrowseScreen extends React.Component {
         <ScrollView>
           <RoundedBox>
             <H1Text>
-              Deepening
+              {CATEGORY_INFO[category].name}
             </H1Text>
-            <SubtitleText>
-              Tagline about how Deepening cards bring you into a relaxed state
+            <SubtitleText style={{ marginBottom: 16 }}>
+              {CATEGORY_INFO[category].description}
             </SubtitleText>
             <ButtonPrimary
               onPress={() => console.log('Pressed Primary Button')}
@@ -55,6 +58,9 @@ export default class CategoryBrowseScreen extends React.Component {
               category={category}
             />
           </RoundedBox>
+
+          <AllCardsList category={category} navigation={navigation} />
+
         </ScrollView>
       </ScreenContainer>
     );

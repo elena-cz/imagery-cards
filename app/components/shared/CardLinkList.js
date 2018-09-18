@@ -7,15 +7,16 @@ import CardLink from 'app/components/shared/CardLink';
 
 export default class CardLinkList extends React.Component {
 
-  renderItem = ({ item: { id, title, subtitle, category } }) => {
+  renderItem = ({ item, index }) => {
     const { onPress, withCategoryDot } = this.props;
+    const { title, subtitle, category } = item;
 
     return (
       <CardLink
         title={title}
         subtitle={subtitle}
         category={category}
-        onPress={() => onPress(id)}
+        onPress={() => onPress(index)}
         withCategoryDot={withCategoryDot}
       />
     );

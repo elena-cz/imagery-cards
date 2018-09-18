@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import IconButton from 'app/components/shared/IconButtons/IconButton';
 
-export default function FavoriteIconButton({ category }) {
+export default function FavoriteIconButton({ category, onPress }) {
 
   return (
     <IconButton
       category={category}
       iconName="heart"
       labelText="Favorite"
-      onPress={() => console.log('Favorite pressed')}
+      onPress={onPress}
       style={{
         // backgroundColor: 'blue',
         // marginRight: -20,
@@ -23,8 +23,10 @@ export default function FavoriteIconButton({ category }) {
 
 FavoriteIconButton.propTypes = {
   category: PropTypes.string,
+  onPress: PropTypes.func,
 };
 
 FavoriteIconButton.defaultProps = {
   category: 'JOURNEY',
+  onPress: () => console.log('Favorite pressed'),
 };

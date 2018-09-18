@@ -7,11 +7,11 @@ import H2Text from 'app/components/shared/H2Text';
 import DividingLine from 'app/components/shared/DividingLine';
 import CardLinkList from 'app/components/shared/CardLinkList';
 
-import CARDS from 'app/exampleCards';
+import SETS from 'app/exampleSets';
 
 export default function AllCardsList({ category, navigation }) {
 
-  const cardList = CARDS[category];
+  const cardList = SETS[category] || [];
 
   return (
     <RoundedBox>

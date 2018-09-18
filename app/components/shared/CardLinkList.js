@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 
 import CardLink from 'app/components/shared/CardLink';
 
+import CARDS from 'app/exampleCards';
 
 export default class CardLinkList extends React.Component {
 
   renderItem = ({ item, index }) => {
     const { onPress, withCategoryDot } = this.props;
-    const { title, subtitle, category } = item;
+    const { title, subtitle, category } = CARDS[item];
 
     return (
       <CardLink
@@ -30,7 +31,7 @@ export default class CardLinkList extends React.Component {
         <FlatList
           data={cards}
           renderItem={this.renderItem}
-          keyExtractor={({ id }) => id.toString()}
+          keyExtractor={(item) => item.toString()}
           style={{ alignSelf: 'stretch' }}
         />
       </View>
@@ -39,14 +40,7 @@ export default class CardLinkList extends React.Component {
 }
 
 CardLinkList.propTypes = {
-  cards: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      subtitle: PropTypes.string,
-      category: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  cards: PropTypes.arrayOf(PropTypes.number).isRequired,
   onPress: PropTypes.func.isRequired,
   withCategoryDot: PropTypes.bool,
 };

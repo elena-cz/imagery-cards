@@ -34,13 +34,17 @@
     "preset": "react-native"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "fbjs": "^0.8.17",
     "prop-types": "^15.6.2",
     "react": "^16.3.2",
     "react-native": "^0.56.0",
     "react-native-firebase": "^4.3.6",
     "react-native-vector-icons": "^4.6.0",
-    "react-navigation": "^2.7.0"
+    "react-navigation": "^2.7.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "rnpm": {
     "assets": [

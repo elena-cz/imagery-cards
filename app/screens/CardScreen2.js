@@ -5,9 +5,11 @@ import { View, FlatList, StyleSheet } from 'react-native';
 
 import Card from 'app/components/card/Card';
 
+import SETS from 'app/exampleSets';
 import CARDS from 'app/exampleCards';
 
 export default class CardScreen extends React.Component {
+
   static propTypes = {
   };
 
@@ -25,7 +27,7 @@ export default class CardScreen extends React.Component {
 
     return (
       <Card
-        cardData={item}
+        cardData={CARDS[item]}
         navigation={navigation}
       />
     );
@@ -33,16 +35,16 @@ export default class CardScreen extends React.Component {
 
   render() {
     const { navigation } = this.props;
-    const cardList = navigation.getParam('cardList', CARDS.JOURNEY);
+    const cardList = navigation.getParam('cardList', SETS.JOURNEY);
+    console.log(cardList);
 
     return (
       <View style={{ flex: 1, alignSelf: 'stretch' }}>
         <FlatList
           data={cardList}
           renderItem={this.renderItem}
-          keyExtractor={({ id }) => id.toString()}
+          keyExtractor={(item) => item.toString()}
           // style={{ alignSelf: 'stretch' }}
-          horizontal
         />
       </View>
     );

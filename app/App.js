@@ -5,7 +5,7 @@ import { createStackNavigator } from 'react-navigation';
 import HomeScreen from 'app/screens/HomeScreen';
 import HelpScreen from 'app/screens/HelpScreen';
 import CategoryBrowseScreen from 'app/screens/CategoryBrowseScreen';
-import CardScreen from 'app/screens/CardScreen';
+import CardScreen from 'app/screens/CardScreen2';
 
 
 const RootStack = createStackNavigator(

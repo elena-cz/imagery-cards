@@ -14,6 +14,8 @@ import BodyText from 'app/components/shared/BodyText';
 export default function Card({ cardData, navigation }) {
   const { title, subtitle, text, category } = cardData;
 
+  console.log(cardData);
+
   return (
     <ScreenContainer category={category} style={styles.screen}>
 
@@ -61,6 +63,6 @@ Card.defaultProps = {
 const styles = StyleSheet.create({
   screen: {
     // width: Dimensions.get('window').window,
-    width: 250,
+    // width: 250,
   },
 });

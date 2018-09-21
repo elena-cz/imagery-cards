@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import firebase from 'react-native-firebase';
 import { createStackNavigator } from 'react-navigation';
 
-import rootReducer from 'app/store/reducers/reducers';
+import rootReducer from 'app/store/reducers/rootReducer';
 import seedState from 'app/store/seedState';
 
 import HomeScreen from 'app/screens/HomeScreen';

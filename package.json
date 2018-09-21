@@ -25,6 +25,7 @@
     "ios": "react-native run-ios",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
+    "debug": "open 'rndebugger://set-debugger-loc?host=localhost&port=8081'",
     "test": "jest",
     "link": "react-native link",
     "log-android": "react-native log-android",

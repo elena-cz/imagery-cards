@@ -16,12 +16,13 @@
         "@app": "./app",
         "@assets": "./app/assets",
         "@components": "./app/components",
+        "@screens": "./app/screens",
         "@store": "./app/store",
         "@actions": "./app/store/actions",
         "@reducers": "./app/store/reducers",
         "@styles": "./app/styles"
       },
-      // "extensions": [".ios.js", ".android.js", ".js", ".json"  ]
+      "extensions": [".ios.js", ".android.js", ".js", ".json"  ]
     }]
   ]
 }

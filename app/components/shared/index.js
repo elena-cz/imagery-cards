@@ -5,7 +5,6 @@ export { default as Background } from '@components/shared/Background';
 export { default as Navigation } from '@components/shared/Navigation';
 export { default as RoundedBox } from '@components/shared/RoundedBox';
 export { default as ScreenContainer } from '@components/shared/ScreenContainer';
-export * from '@components/shared/ScreenContainer';
 
 /*  TEXT   */
 

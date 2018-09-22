@@ -27,6 +27,7 @@ module.exports = {
           "@app": "./app",
           "@assets": "./app/assets",
           "@components": "./app/components",
+          "@screens": "./app/screens",
           "@store": "./app/store",
           "@actions": "./app/store/actions",
           "@reducers": "./app/store/reducers",

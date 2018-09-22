@@ -1,17 +1,20 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Text, View, ScrollView, StyleSheet } from 'react-native';
 
-import ScreenContainer from 'app/components/shared/ScreenContainer';
-import Navigation from 'app/components/shared/Navigation';
-import HelpIconButton from 'app/components/shared/IconButtons/HelpIconButton';
-import BackIconButton from 'app/components/shared/IconButtons/BackIconButton';
-import RoundedBox from 'app/components/shared/RoundedBox';
-import H1Text from 'app/components/shared/H1Text';
-import SubtitleText from 'app/components/shared/SubtitleText';
-import ButtonPrimary from 'app/components/shared/ButtonPrimary';
+import {
+  ScreenContainer,
+  Navigation,
+  HelpIconButton,
+  BackIconButton,
+  RoundedBox,
+  H1Text,
+  SubtitleText,
+  ButtonPrimary,
+} from '@components/shared';
 
-import AllCardsList from 'app/components/categoryBrowse/AllCardsList';
+import AllCardsList from '@components/categoryBrowse/AllCardsList';
 
 import CATEGORY_INFO from 'app/categoryInfo';
 
@@ -35,7 +38,7 @@ export default class CategoryBrowseScreen extends React.Component {
     return (
       <ScreenContainer category={category}>
         <Navigation>
-          <BackIconButton  
+          <BackIconButton
             category={category}
             onPress={() => navigation.goBack()}
           />

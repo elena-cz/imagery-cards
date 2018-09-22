@@ -5,13 +5,13 @@ import thunk from 'redux-thunk';
 import firebase from 'react-native-firebase';
 import { createStackNavigator } from 'react-navigation';
 
-import rootReducer from 'app/store/reducers/rootReducer';
-import seedState from 'app/store/seedState';
+import rootReducer from '@reducers/rootReducer';
+import seedState from '@store/seedState';
 
-import HomeScreen from 'app/screens/HomeScreen';
-import HelpScreen from 'app/screens/HelpScreen';
-import CategoryBrowseScreen from 'app/screens/CategoryBrowseScreen';
-import CardScreen from 'app/screens/CardScreen2';
+import HelpScreen from '@screens/HelpScreen';
+import HomeScreen from '@screens/HomeScreen';
+import CategoryBrowseScreen from '@screens/CategoryBrowseScreen';
+import CardScreen from '@screens/CardScreen2';
 
 const middleware = [thunk];
 // eslint-disable-next-line no-underscore-dangle

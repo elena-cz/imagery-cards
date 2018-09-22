@@ -7,5 +7,21 @@
       "plugins": [
       ]
     }
-  }
+  },
+  "plugins" : [
+    ["module-resolver", {
+      "cwd": "babelrc",
+      "root": ["./app"],
+      "alias": {
+        "@app": "./app",
+        "@assets": "./app/assets",
+        "@components": "./app/components",
+        "@store": "./app/store",
+        "@actions": "./app/store/actions",
+        "@reducers": "./app/store/reducers",
+        "@styles": "./app/styles"
+      },
+      // "extensions": [".ios.js", ".android.js", ".js", ".json"  ]
+    }]
+  ]
 }

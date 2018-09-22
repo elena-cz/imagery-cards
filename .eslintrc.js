@@ -20,4 +20,19 @@ module.exports = {
     'react/no-typos': 0, // https://github.com/yannickcr/eslint-plugin-react/issues/1389
     'arrow-parens': 0,
   },
+  settings: {
+    'import/resolver': {
+      'babel-module': {
+        "alias": {
+          "@app": "./app",
+          "@assets": "./app/assets",
+          "@components": "./app/components",
+          "@store": "./app/store",
+          "@actions": "./app/store/actions",
+          "@reducers": "./app/store/reducers",
+          "@styles": "./app/styles"
+        },
+      },
+    },
+  },
 };

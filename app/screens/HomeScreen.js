@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, View, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 
-import ScreenContainer from 'app/components/shared/ScreenContainer';
-import Navigation from 'app/components/shared/Navigation';
-import HelpIconButton from 'app/components/shared/IconButtons/HelpIconButton';
-import CategoryChooser from 'app/components/home/CategoryChooser';
+import {
+  ScreenContainer,
+  Navigation,
+  HelpIconButton,
+} from '@components/shared';
+
+import CategoryChooser from '@components/home/CategoryChooser';
 
 
 export default class HomeScreen extends React.Component {
@@ -19,8 +22,6 @@ export default class HomeScreen extends React.Component {
   state = {
     // fadeOpacity: new Animated.Value(0),
   };
-
-
 
   render() {
     const category = 'JOURNEY';

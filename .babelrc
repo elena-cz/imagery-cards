@@ -9,20 +9,27 @@
     }
   },
   "plugins" : [
-    ["module-resolver", {
-      "cwd": "babelrc",
-      "root": ["./app"],
-      "alias": {
-        "@app": "./app",
-        "@assets": "./app/assets",
-        "@components": "./app/components",
-        "@screens": "./app/screens",
-        "@store": "./app/store",
-        "@actions": "./app/store/actions",
-        "@reducers": "./app/store/reducers",
-        "@styles": "./app/styles"
+    ["module-resolver",
+      {
+        "cwd": "babelrc",
+        "root": ["./app"],
+        "alias": {
+          "app": "./app",
+          "@app": "./app",
+          "@assets": "./app/assets",
+          "@components": "./app/components",
+          "@screens": "./app/screens",
+          "@store": "./app/store",
+          "@actions": "./app/store/actions",
+          "@reducers": "./app/store/reducers",
+          "@styles": "./app/styles"
       },
       "extensions": [".ios.js", ".android.js", ".js", ".json"  ]
-    }]
+    }],
+    [ "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ]
   ]
 }

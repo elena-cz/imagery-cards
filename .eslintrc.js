@@ -24,6 +24,7 @@ module.exports = {
     'import/resolver': {
       'babel-module': {
         "alias": {
+          "app": "./app",
           "@app": "./app",
           "@assets": "./app/assets",
           "@components": "./app/components",

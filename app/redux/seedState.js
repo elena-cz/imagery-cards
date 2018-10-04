@@ -1,4 +1,4 @@
-import CARDS from 'app/store/exampleCards';
+import CARDS from 'app/redux/exampleCards';
 
 const seedState = {
 
